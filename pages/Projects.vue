@@ -5,7 +5,7 @@
 <script>
 export default {
   head: {
-    title: "Projects | HieuDo Portfolio",
+    title: "HieuDo Portfolio | Projects",
     meta: [
       {
         hid: "description",

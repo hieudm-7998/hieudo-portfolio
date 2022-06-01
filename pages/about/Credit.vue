@@ -1,11 +1,15 @@
 <template>
   <div>
-    <h1>Home</h1>
+      <h1>Credit</h1>
   </div>
 </template>
 
 <script>
 export default {
-  name: "IndexPage",
-};
+    layout: 'about'
+}
 </script>
+
+<style>
+
+</style>
