@@ -2,8 +2,8 @@
   <div class="py-5">
     <div class="mb-5 border-b-2">
       <NuxtLink class="text-2xl hd-logo" to="/"
-        ><span class="gradient transition-all">hieudo</span
-        ><span class="gradient-2 transition-all">Portfolio</span></NuxtLink
+        ><span class="gradient-2 transition ease-in-out duration-500">hieudo</span
+        ><span class="gradient transition ease-in-out duration-500">Portfolio</span></NuxtLink
       >
     </div>
     <div class="flex items-center justify-between uppercase">

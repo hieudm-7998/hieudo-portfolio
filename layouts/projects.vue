@@ -2,7 +2,7 @@
   <div class="app container">
     <Header />
     <div class="grid grid-cols-5 gap-4">
-      <AboutNavigation />
+      <ProjectsNavigation />
       <Nuxt class="col-span-4" />
     </div>
   </div>
