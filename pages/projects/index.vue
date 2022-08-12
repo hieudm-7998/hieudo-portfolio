@@ -1,6 +1,12 @@
 <template>
   <div>
-    <h1 class="text-center xl:text-left">{{desktop ? "👈🏼 Click on the specific year to see projects !" : "👆🏻 Click on the specific year above to see projects !"}}</h1>
+    <h1 class="text-center xl:text-left">
+      {{
+        desktop
+          ? "👈🏼 Click on the specific year to see projects !"
+          : "👆🏻 Click on the specific year above to see projects !"
+      }}
+    </h1>
   </div>
 </template>
 
