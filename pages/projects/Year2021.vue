@@ -7,7 +7,7 @@
       ( First year on business <span class="not-italic">😇</span> )
     </p>
     <div
-      class="pb-3 mb-3 border-b-2 border-gray-300"
+      class="pb-3 mb-3 border-b-2 border-gray-300 xs:w-screen lg:w-auto"
       v-for="(project, index) in projects"
       :key="index"
     >
