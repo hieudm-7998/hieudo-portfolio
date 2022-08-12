@@ -7,15 +7,16 @@
       ( First year on business <span class="not-italic">😇</span> )
     </p>
     <div
-      class="pb-3 mb-3 border-b-2 border-gray-300 xs:w-screen lg:w-auto"
+      class="pb-3 mb-3 border-b-2 border-gray-300"
       v-for="(project, index) in projects"
       :key="index"
     >
-      <v-carousel :show-arrows="false" :height="desktop ? '300px' : '100%'" class="rounded mb-3">
+      <v-carousel :show-arrows="false" :height="desktop ? '300px' : 'auto'" class="rounded mb-3">
         <v-carousel-item
           v-for="(image, i) in project.images"
           :key="i"
           :src="image.src"
+          contain
         ></v-carousel-item>
       </v-carousel>
       <h1 class="uppercase text-lg">{{ project.name }}</h1>
@@ -50,6 +51,9 @@ export default {
       return this.$vuetify.breakpoint.xl;
     },
   },
+  mounted() {
+    console.log(this.desktop)
+  }
 };
 </script>
 
