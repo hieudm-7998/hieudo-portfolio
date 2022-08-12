@@ -11,7 +11,7 @@
       v-for="(project, index) in projects"
       :key="index"
     >
-      <v-carousel :show-arrows="false" :height="desktop ? '300px' : 'auto'" class="rounded mb-3">
+      <v-carousel :show-arrows="false" :height="desktop ? 300 : 'auto'" class="rounded mb-3">
         <v-carousel-item
           v-for="(image, i) in project.images"
           :key="i"
