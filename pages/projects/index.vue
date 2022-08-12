@@ -1,12 +1,13 @@
 <template>
   <div>
-      <h1>Content</h1>
+      <h1>👈🏼 Click on the specific year to see projects !</h1>
   </div>
 </template>
 
 <script>
+
 export default {
-    layout: 'projects'
+    layout: 'projects',
 }
 </script>
 

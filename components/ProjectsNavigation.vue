@@ -1,6 +1,6 @@
 <template>
-  <div class="flex flex-col border-r-2">
-    <NuxtLink to="/projects/2021">2021</NuxtLink>
+  <div class="flex flex-col border-r-2 border-gray-300">
+    <NuxtLink to="/projects/Year2021">2021</NuxtLink>
     <NuxtLink to="/projects/2022">2022</NuxtLink>
   </div>
 </template>

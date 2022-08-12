@@ -1,9 +1,9 @@
 <template>
   <div class="app container">
     <Header />
-    <div class="grid grid-cols-5 gap-4">
-      <ProjectsNavigation />
-      <Nuxt class="col-span-4" />
+    <div class="grid xs:grid-cols-12 lg:grid-cols-5 lg:gap-4">
+      <ProjectsNavigation class="xs:col-span-12 xl:col-span-0" />
+      <Nuxt class="xs:col-span-12 xl:col-span-4" />
     </div>
   </div>
 </template>

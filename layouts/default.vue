@@ -22,7 +22,16 @@ export default {};
 .page-leave-to {
   opacity: 0;
 }
-.primary-color{
-  color: #ff971a;
+.primary-color {
+  color: rgb(249 115 22);
+}
+::-moz-selection { /* Code for Firefox */
+  color: white;
+  background: rgb(249 115 22);
+}
+
+::selection {
+  color: white;
+  background: rgb(249 115 22);
 }
 </style>

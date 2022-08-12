@@ -1,7 +1,7 @@
 export default {
   // Disable server-side rendering: https://go.nuxtjs.dev/ssr-mode
   ssr: false,
-  target: 'static',
+  target: "static",
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
@@ -34,6 +34,19 @@ export default {
   buildModules: [
     // https://go.nuxtjs.dev/tailwindcss
     "@nuxtjs/tailwindcss",
+    [
+      "@nuxtjs/fontawesome",
+      {
+        icons: { solid: ["faLink", "faHeart"], brands: true},
+      },
+    ],
+    [
+      "@nuxtjs/vuetify",
+      {
+        customVariables: ["~/assets/variables.scss"],
+        treeShake: true, // <-- add this line
+      },
+    ],
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
@@ -72,6 +85,11 @@ export default {
     manifest: {
       lang: "en",
     },
+  },
+
+  router: {
+    linkActiveClass: 'nuxt-link-active',
+    linkExactActiveClass: 'nuxt-link-exact-active',
   },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build

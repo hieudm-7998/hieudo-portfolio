@@ -7,7 +7,7 @@
       >
     </div>
     <div class="flex items-center justify-between uppercase">
-      <NuxtLink to="/">Home</NuxtLink>
+      <NuxtLink to="/" exact>Home</NuxtLink>
       <NuxtLink to="/projects">Projects</NuxtLink>
       <NuxtLink to="/work">Work</NuxtLink>
       <NuxtLink to="/about">About me</NuxtLink>
@@ -22,9 +22,14 @@ export default {
 </script>
 
 <style lang="scss">
-a.nuxt-link-exact-active {
+.nuxt-link-active {
   color: #ff971a;
 }
+
+.nuxt-link-exact-active{
+  color: #ff971a
+}
+
 .hd-logo {
   .gradient {
     background: linear-gradient(
