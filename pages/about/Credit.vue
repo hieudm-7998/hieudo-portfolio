@@ -1,8 +1,12 @@
 <template>
   <div>
-    <h1 class="text-center text-2xl">This portfolio mostly created by</h1>
+    <h1 class="text-center">This portfolio mostly created by</h1>
     <a class="block mx-auto" href="https://nuxtjs.org/"
       ><img src="~/assets/images/nuxtjs.jpg" alt=""
+    /></a>
+    <h2 class="text-center">Deployed by</h2>
+    <a class="block mx-auto" href="https://www.netlify.com"
+      ><img src="~/assets/images/netlify.png" alt=""
     /></a>
     <h2 class="text-center">and other libraries :</h2>
     <h2 class="text-center mb-5">
@@ -14,7 +18,10 @@
         >FontAwesome</a
       >.
     </h2>
-    <p class="text-center italic">Thanks to every author who made these libraries, or at least made it free. <span class="not-italic">🙏</span></p>
+    <p class="text-center italic">
+      Thanks to every author who made these libraries, or at least made it free.
+      <span class="not-italic">🙏</span>
+    </p>
   </div>
 </template>
 
