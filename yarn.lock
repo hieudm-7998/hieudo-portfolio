@@ -983,7 +983,7 @@
   "resolved" "https://registry.npmjs.org/@fortawesome/fontawesome-common-types/-/fontawesome-common-types-6.1.2.tgz"
   "version" "6.1.2"
 
-"@fortawesome/fontawesome-svg-core@^1.2.27", "@fortawesome/fontawesome-svg-core@>= 1.2.0 < 1.3":
+"@fortawesome/fontawesome-svg-core@^1.2.27", "@fortawesome/fontawesome-svg-core@>= 1.2.0 < 1.3", "@fortawesome/fontawesome-svg-core@~1 || ~6":
   "integrity" "sha512-YUcsLQKYb6DmaJjIHdDWpBIGCcyE/W+p/LMGvjQem55Mm2XWVAP5kWTMKWLv9lwpCVjpLxPyOMOyUocP1GxrtA=="
   "resolved" "https://registry.npmjs.org/@fortawesome/fontawesome-svg-core/-/fontawesome-svg-core-1.2.36.tgz"
   "version" "1.2.36"
@@ -993,6 +993,13 @@
 "@fortawesome/free-brands-svg-icons@^6.1.2":
   "integrity" "sha512-b2eMfXQBsSxh52pcPtYchURQs6BWNh3zVTG8XH8Lv6V4kDhEg7D0kHN+K1SZniDiPb/e5tBlaygsinMUvetITA=="
   "resolved" "https://registry.npmjs.org/@fortawesome/free-brands-svg-icons/-/free-brands-svg-icons-6.1.2.tgz"
+  "version" "6.1.2"
+  dependencies:
+    "@fortawesome/fontawesome-common-types" "6.1.2"
+
+"@fortawesome/free-regular-svg-icons@^6.1.2":
+  "integrity" "sha512-xR4hA+tAwsaTHGfb+25H1gVU/aJ0Rzu+xIUfnyrhaL13yNQ7TWiI2RvzniAaB+VGHDU2a+Pk96Ve+pkN3/+TTQ=="
+  "resolved" "https://registry.npmjs.org/@fortawesome/free-regular-svg-icons/-/free-regular-svg-icons-6.1.2.tgz"
   "version" "6.1.2"
   dependencies:
     "@fortawesome/fontawesome-common-types" "6.1.2"
@@ -1009,10 +1016,32 @@
   "resolved" "https://registry.npmjs.org/@fortawesome/vue-fontawesome/-/vue-fontawesome-0.1.10.tgz"
   "version" "0.1.10"
 
+"@fortawesome/vue-fontawesome@^2.0.8":
+  "integrity" "sha512-SRmP0q9Ox4zq8ydDR/hrH+23TVU1bdwYVnugLVaAIwklOHbf56gx6JUGlwES7zjuNYqzKgl8e39iYf6ph8qSQw=="
+  "resolved" "https://registry.npmjs.org/@fortawesome/vue-fontawesome/-/vue-fontawesome-2.0.8.tgz"
+  "version" "2.0.8"
+
 "@gar/promisify@^1.0.1":
   "integrity" "sha512-k2Ty1JcVojjJFwrg/ThKi2ujJ7XNLYaFGNB/bWT9wGR+oSMJHMa5w+CUq6p/pVrKeNNgA7pCqEcjSnHVoqJQFw=="
   "resolved" "https://registry.npmjs.org/@gar/promisify/-/promisify-1.1.3.tgz"
   "version" "1.1.3"
+
+"@growthbunker/vuedarkmode@0.5.48":
+  "integrity" "sha512-lBYDDaI/7LkNmlRhS/hxTNhh5eFiK8tYBfKzpzam4IJeTrGSStFSxWJfc9FmBXSLqtD6CtwjvBlcqIcSuPtp3g=="
+  "resolved" "https://registry.npmjs.org/@growthbunker/vuedarkmode/-/vuedarkmode-0.5.48.tgz"
+  "version" "0.5.48"
+  dependencies:
+    "v-click-outside" "2.1.4"
+    "v-hotkey" "0.8.0"
+
+"@growthbunker/vuetimeline@^0.1.17":
+  "integrity" "sha512-HLQfiQRi/+1z1quiVrdlKQ5sCZBP6XPpb4e+VBa9A79XaW5oi8ygd1RtVXdh1M98ldTCesaQgEpaQ6EsR4tv3w=="
+  "resolved" "https://registry.npmjs.org/@growthbunker/vuetimeline/-/vuetimeline-0.1.17.tgz"
+  "version" "0.1.17"
+  dependencies:
+    "@growthbunker/vuedarkmode" "0.5.48"
+    "scrollreveal" "4.0.5"
+    "timeago.js" "4.0.1"
 
 "@humanwhocodes/config-array@^0.10.4":
   "integrity" "sha512-mXAIHxZT3Vcpg83opl1wGlVZ9xydbfZO3r5YfRSH6Gpp2J/PfdBP0wbDa2sO6/qRbcalpoevVyW6A/fI6LfeMw=="
@@ -3271,15 +3300,10 @@
     "browserslist" "^4.21.3"
     "semver" "7.0.0"
 
-"core-js@^2.6.5":
+"core-js@^2.5.7", "core-js@^2.6.5":
   "integrity" "sha512-Kb2wC0fvsWfQrgk8HU5lW6U/Lcs8+9aaYcy4ZFc6DDlo4nZ7n70dEgE5rtR0oG6ufKDUnrwfWL1mXR5ljDatrQ=="
   "resolved" "https://registry.npmjs.org/core-js/-/core-js-2.6.12.tgz"
   "version" "2.6.12"
-
-"core-js@^3.19.3":
-  "integrity" "sha512-0QTBSYSUZ6Gq21utGzkfITDylE8jWC9Ne1D2MrhvlsZBI1x39OdDIVbzSqtgMndIy6BlHxBXpMGqzZmnztg2rg=="
-  "resolved" "https://registry.npmjs.org/core-js/-/core-js-3.24.1.tgz"
-  "version" "3.24.1"
 
 "core-util-is@~1.0.0":
   "integrity" "sha512-ZQBvi1DcpJ4GDqanjucZ2Hj3wEO5pZDS89BWbkcrvdxksJorwUDDZamX9ldFkp9aw2lmBDLgkObEA4DWNJ9FYQ=="
@@ -5651,6 +5675,18 @@
   "resolved" "https://registry.npmjs.org/is-docker/-/is-docker-2.2.1.tgz"
   "version" "2.2.1"
 
+"is-dom-node-list@^1.2.1":
+  "integrity" "sha512-P1H071iT5TGG8pAHslhrLDo/tQLYc8tGuWABVqhGU4l2mm7aDNb9cx2myQ2AujEQO6B2cAujcW4a0/+6UfXInw=="
+  "resolved" "https://registry.npmjs.org/is-dom-node-list/-/is-dom-node-list-1.2.1.tgz"
+  "version" "1.2.1"
+  dependencies:
+    "is-dom-node" "^1.0.4"
+
+"is-dom-node@^1.0.4":
+  "integrity" "sha512-NEnTHKCeyGJTL0cKdzATF8SWzyTMYf5CbNKWBvsXvyMxZG32g+a09qkeCbrfQNLTD85CbPeHb4YjIJCjyzF0yA=="
+  "resolved" "https://registry.npmjs.org/is-dom-node/-/is-dom-node-1.0.4.tgz"
+  "version" "1.0.4"
+
 "is-extendable@^0.1.0", "is-extendable@^0.1.1":
   "integrity" "sha512-5BMULNob1vgFX6EjQw5izWDxrecWK9AM72rugNr0TFldMOi0fj6Jk+zeKIt0xGj4cEfQIJth4w3OKWOJ4f+AFw=="
   "resolved" "https://registry.npmjs.org/is-extendable/-/is-extendable-0.1.1.tgz"
@@ -6541,6 +6577,11 @@
   "version" "3.3.4"
   dependencies:
     "yallist" "^4.0.0"
+
+"miniraf@1.0.0":
+  "integrity" "sha512-XpvhtJYzVrpXe+JoAthrT9E40NIrSDDMcdHEYL2M+lR/OCas0nadetcBBq/MWYqlgV5aDWVQ3mfAqd+fG6Y/EQ=="
+  "resolved" "https://registry.npmjs.org/miniraf/-/miniraf-1.0.0.tgz"
+  "version" "1.0.0"
 
 "minizlib@^1.3.3":
   "integrity" "sha512-6ZYMOEnmVsdCeTJVE0W9ZD+pVnE8h9Hma/iOwwRDsdQoePpoX56/8B6z3P9VNwppJuBKNRuFDRNRqRWexT9G9Q=="
@@ -8548,6 +8589,11 @@
   "resolved" "https://registry.npmjs.org/relateurl/-/relateurl-0.2.7.tgz"
   "version" "0.2.7"
 
+"rematrix@0.3.0":
+  "integrity" "sha512-xB/9ZvJIKaDgXX0qkvV9/pLD8zK23A6TVV6F8Vhsl+SrxbBeVYutz5uszxgC6Rt3RP9LZiH8OXaYjr+x6WXWmQ=="
+  "resolved" "https://registry.npmjs.org/rematrix/-/rematrix-0.3.0.tgz"
+  "version" "0.3.0"
+
 "remove-trailing-separator@^1.0.1":
   "integrity" "sha512-/hS+Y0u3aOfIETiaiirUFwDBDzmXPvO+jAfKTitUngIPzdKc6Z0LoFjM/CK5PL4C+eKwHohlHAb6H0VFfmmUsw=="
   "resolved" "https://registry.npmjs.org/remove-trailing-separator/-/remove-trailing-separator-1.1.0.tgz"
@@ -8860,6 +8906,15 @@
     "@types/json-schema" "^7.0.8"
     "ajv" "^6.12.5"
     "ajv-keywords" "^3.5.2"
+
+"scrollreveal@4.0.5":
+  "integrity" "sha512-dyQ0BPOLuoRzKAEwGgVaZsN4mxErHnuzh3Wq0ygE/PteGHeTCOubBoTzxSoix5UGLOUYMDapNAwajfQCB483aw=="
+  "resolved" "https://registry.npmjs.org/scrollreveal/-/scrollreveal-4.0.5.tgz"
+  "version" "4.0.5"
+  dependencies:
+    "miniraf" "1.0.0"
+    "rematrix" "0.3.0"
+    "tealight" "0.3.6"
 
 "scule@^0.2.1":
   "integrity" "sha512-M9gnWtn3J0W+UhJOHmBxBTwv8mZCan5i1Himp60t6vvZcor0wr+IM0URKmIglsWJ7bRujNAVVN77fp+uZaWoKg=="
@@ -9588,6 +9643,14 @@
     "mkdirp" "^1.0.3"
     "yallist" "^4.0.0"
 
+"tealight@0.3.6":
+  "integrity" "sha512-Dys3N8jFBThD9pNVpPCyUiu6DfWcTBdqWQJIvnAuVaFkGEdrPBJ43070vVbn6sTlLvn2IQK2zFW4FrVIrTo8eQ=="
+  "resolved" "https://registry.npmjs.org/tealight/-/tealight-0.3.6.tgz"
+  "version" "0.3.6"
+  dependencies:
+    "is-dom-node" "^1.0.4"
+    "is-dom-node-list" "^1.2.1"
+
 "terser-webpack-plugin@^1.4.3":
   "integrity" "sha512-04Rfe496lN8EYruwi6oPQkG0vo8C+HT49X687FZnpPF0qMAIHONI6HEXYPKDOE8e5HjXTyKfqRd/agHtH0kOtw=="
   "resolved" "https://registry.npmjs.org/terser-webpack-plugin/-/terser-webpack-plugin-1.4.5.tgz"
@@ -9670,6 +9733,11 @@
   "integrity" "sha512-uVFet1LQToeUX0rTcSiYVYVoGuBpc8gP/2jnlUzuHMHe+gux6XLsNzxLUweabMwiUj5ejhoIMsUI55nVSEa/Vw=="
   "resolved" "https://registry.npmjs.org/time-fix-plugin/-/time-fix-plugin-2.0.7.tgz"
   "version" "2.0.7"
+
+"timeago.js@4.0.1":
+  "integrity" "sha512-ePzZuMoJqUc44hJbUYtY1qtzU7IammxooDCcFKogLkS5Nj+iCabR0ZlmNOFX8Dm1r5EpvR5q/PotOJli/mEPew=="
+  "resolved" "https://registry.npmjs.org/timeago.js/-/timeago.js-4.0.1.tgz"
+  "version" "4.0.1"
 
 "timers-browserify@^2.0.4":
   "integrity" "sha512-9phl76Cqm6FhSX9Xe1ZUAMLtm1BLkKj2Qd5ApyWkXzsMRaA7dgr81kf4wJmQf/hAvg8EEyJxDo3du/0KlhPiKQ=="
@@ -10121,6 +10189,18 @@
   "resolved" "https://registry.npmjs.org/utils-merge/-/utils-merge-1.0.1.tgz"
   "version" "1.0.1"
 
+"v-click-outside@2.1.4":
+  "integrity" "sha512-NbQiwRjJjeKptI1qr1co2Ox44fUWEnj08chR1nw3DVrNCQHjb+sqlevzb1zCXMgb7orTFE0wpiecqMlbOZ15EQ=="
+  "resolved" "https://registry.npmjs.org/v-click-outside/-/v-click-outside-2.1.4.tgz"
+  "version" "2.1.4"
+
+"v-hotkey@0.8.0":
+  "integrity" "sha512-TWxiUbd5DPF/ClnGsa0VHw1jXX6xA8G8jNy/qFeULVz28cq8ZFz+SGNcniXj7WHazoqRUSzL20y/VDiZ+yzprw=="
+  "resolved" "https://registry.npmjs.org/v-hotkey/-/v-hotkey-0.8.0.tgz"
+  "version" "0.8.0"
+  dependencies:
+    "core-js" "^2.6.5"
+
 "v8-compile-cache@^2.0.3":
   "integrity" "sha512-l8lCEmLcLYZh4nbunNZvQCJc5pv7+RCwa8q/LdUx8u7lsWvPDKmpodJAJNwkAhJC//dFY48KuIEmjtd4RViDrA=="
   "resolved" "https://registry.npmjs.org/v8-compile-cache/-/v8-compile-cache-2.3.0.tgz"
@@ -10240,7 +10320,7 @@
   "resolved" "https://registry.npmjs.org/vue-template-es2015-compiler/-/vue-template-es2015-compiler-1.9.1.tgz"
   "version" "1.9.1"
 
-"vue@*", "vue@^2.0.0", "vue@^2.6.12", "vue@^2.6.4", "vue@^2.7.2", "vue@^2.7.8", "vue@~2":
+"vue@*", "vue@^2.0.0", "vue@^2.6.12", "vue@^2.6.4", "vue@^2.7.2", "vue@^2.7.8", "vue@^2.x", "vue@~2":
   "integrity" "sha512-ncwlZx5qOcn754bCu5/tS/IWPhXHopfit79cx+uIlLMyt3vCMGcXai5yCG5y+I6cDmEj4ukRYyZail9FTQh7lQ=="
   "resolved" "https://registry.npmjs.org/vue/-/vue-2.7.8.tgz"
   "version" "2.7.8"

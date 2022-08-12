@@ -3,7 +3,7 @@
     <img src="./../static/H.jpg" alt="" />
     <h1 class="my-5 text-xl">
       Hello, I'm Hieu 👋🏻<br />Welcome to my portfolio, explore the link above to
-      find more information about me ! ✨
+      hear the story about me ! ✨
     </h1>
   </div>
 </template>

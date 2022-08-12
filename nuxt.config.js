@@ -34,12 +34,8 @@ export default {
   buildModules: [
     // https://go.nuxtjs.dev/tailwindcss
     "@nuxtjs/tailwindcss",
-    [
-      "@nuxtjs/fontawesome",
-      {
-        icons: { solid: ["faLink", "faHeart"], brands: true},
-      },
-    ],
+    "@nuxtjs/fontawesome",
+    ,
     [
       "@nuxtjs/vuetify",
       {
@@ -48,6 +44,15 @@ export default {
       },
     ],
   ],
+
+  fontawesome: {
+    component: "Fa",
+    suffix: false,
+    icons: {
+      solid: true,
+      brands: true,
+    },
+  },
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
@@ -88,8 +93,8 @@ export default {
   },
 
   router: {
-    linkActiveClass: 'nuxt-link-active',
-    linkExactActiveClass: 'nuxt-link-exact-active',
+    linkActiveClass: "nuxt-link-active",
+    linkExactActiveClass: "nuxt-link-exact-active",
   },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build

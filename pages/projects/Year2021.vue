@@ -12,7 +12,7 @@
           border-b-2 border-gray-300
         "
       >
-        ( First year as rookie <span class="not-italic">😇</span> )
+        / First year as rookie <span class="not-italic">😇</span> /
       </p>
     </div>
     <div
@@ -40,7 +40,7 @@
         :href="project.url"
         target="_blank"
         class="italic hover:text-orange-500 text-sm cursor-pointer mb-3 block"
-        >{{ project.url }} <span><font-awesome-icon icon="link" /></span
+        >{{ project.url }} <span><fa :icon="['fa', 'link']" /></span
       ></a>
       <h1 class="text-sm mb-3 text-justify">{{ project.description }}</h1>
       <h1 class="text-sm">
@@ -55,7 +55,7 @@
 import projects from "~/data/projects.js";
 
 export default {
-  name: "2021",
+  name: "Year2021",
   layout: "projects",
   data() {
     return {

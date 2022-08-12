@@ -77,6 +77,110 @@ const projects = [
     technology: "PHP, jQuery, Bootstrap 5, SCSS",
     designSystem: "Figma",
   },
+  {
+    year: 2021,
+    name: "Starify",
+    url: "https://starify.io/",
+    images: [
+      {
+        src: require("~/assets/images/starify-01.jpg"),
+      },
+      {
+        src: require("~/assets/images/starify-02.png"),
+      },
+      {
+        src: require("~/assets/images/starify-03.png"),
+      },
+      {
+        src: require("~/assets/images/starify-04.png"),
+      },
+      {
+        src: require("~/assets/images/starify-05.png"),
+      },
+    ],
+    description:
+      "This landing page is made for Starify - Crypto digital wallet managing application. This is quite simple page, I finished it around 4 days.",
+    technology: "Bootstrap 5, jQuery, SCSS",
+    designSystem: "Figma",
+  },
+  {
+    year: 2022,
+    name: "SCG | Home Prime Living",
+    url: "https://www.scghome.vn/",
+    images: [
+      {
+        src: require("~/assets/images/scg-prime-living-01.png"),
+      },
+      {
+        src: require("~/assets/images/scg-prime-living-02.png"),
+      },
+      {
+        src: require("~/assets/images/scg-prime-living-03.png"),
+      },
+      {
+        src: require("~/assets/images/scg-prime-living-04.png"),
+      },
+      {
+        src: require("~/assets/images/scg-prime-living-05.png"),
+      },
+    ],
+    description:
+      "This is my first project working with NuxtJS, which based on VueJS. This E-Commerce page is made for selling house furnitures. This is also my first time working with intergrating REST API into sites, evenly server side rendering. I actually learned and gained myself a lot of experience this time.",
+    technology: "NuxtJS, Vuetify, Tailwind CSS",
+    designSystem: "Zeplin",
+  },
+  {
+    year: 2022,
+    name: "Smartbox",
+    url: "https://www.smartbox.com/",
+    images: [
+      {
+        src: require("~/assets/images/smartbox-01.png"),
+      },
+      {
+        src: require("~/assets/images/smartbox-02.png"),
+      },
+      {
+        src: require("~/assets/images/smartbox-03.png"),
+      },
+      {
+        src: require("~/assets/images/smartbox-04.png"),
+      },
+      {
+        src: require("~/assets/images/smartbox-05.png"),
+      },
+    ],
+    description:
+      "Smartbox Group is a multinational ecosystem which built for e-commerce. I was having chance to work with friendly Ireland workers in their own system. This project requires a lot of difficult technique during doing it.",
+    technology: "NuxtJS, Redis, Storybook",
+    designSystem: "Zeplin",
+  },
+  {
+    year: 2022,
+    name: "SCGP | E-Ordering",
+    url: "https://scgp-eordering-dev.scg-wedo.tech/",
+    images: [
+      {
+        src: require("~/assets/images/scg-eo-01.png"),
+      },
+      {
+        src: require("~/assets/images/scg-eo-02.png"),
+      },
+      {
+        src: require("~/assets/images/scg-eo-03.png"),
+      },
+      {
+        src: require("~/assets/images/scg-eo-04.png"),
+      },
+      {
+        src: require("~/assets/images/scg-eo-05.png"),
+      },
+    ],
+    description:
+      "Another project I did for SCG Group, this project is made for user creating bill order in SCG system. This is my first time working with ReactJS and GraphQL.",
+    technology: "ReactJS, Material UI 4, GraphQL, Apollo Client",
+    designSystem: "Figma",
+  },
 ];
 
 export default projects;

@@ -8,9 +8,9 @@
     </div>
     <div class="flex items-center justify-between uppercase">
       <NuxtLink to="/" exact>Home</NuxtLink>
+      <NuxtLink to="/about">About me</NuxtLink>
       <NuxtLink to="/projects">Projects</NuxtLink>
       <NuxtLink to="/work">Work</NuxtLink>
-      <NuxtLink to="/about">About me</NuxtLink>
     </div>
   </div>
 </template>
