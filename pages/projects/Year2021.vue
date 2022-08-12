@@ -4,10 +4,10 @@
     <p
       class="text-sm italic text-gray-500 pb-2 mb-3 border-b-2 border-gray-300"
     >
-      ( First year on business <span class="not-italic">😇</span> )
+      ( First year as rookie <span class="not-italic">😇</span> )
     </p>
     <div
-      class="pb-3 mb-3 border-b-2 border-gray-300 xs:w-screen lg:w-auto"
+      class="pb-3 mb-3 border-b-2 border-gray-300 w-screen xl:w-auto"
       v-for="(project, index) in projects"
       :key="index"
     >
