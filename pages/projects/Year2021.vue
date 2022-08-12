@@ -20,9 +20,6 @@
         pb-3
         mb-3
         border-b-2 border-gray-300
-        w-screen
-        overflow-y-hidden
-        xl:max-w-full xl:w-auto
       "
       v-for="(project, index) in projects"
       :key="index"
