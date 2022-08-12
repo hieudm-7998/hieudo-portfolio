@@ -1,17 +1,37 @@
 <template>
   <div>
-    <h1 class="text-2xl uppercase">2021's projects</h1>
-    <p
-      class="text-sm italic text-gray-500 pb-2 mb-3 border-b-2 border-gray-300"
-    >
-      ( First year as rookie <span class="not-italic">😇</span> )
-    </p>
+    <div class="text-center">
+      <h1 class="text-2xl uppercase">2021's projects</h1>
+      <p
+        class="
+          text-sm
+          italic
+          text-gray-500
+          pb-2
+          mb-3
+          border-b-2 border-gray-300
+        "
+      >
+        ( First year as rookie <span class="not-italic">😇</span> )
+      </p>
+    </div>
     <div
-      class="pb-3 mb-3 border-b-2 border-gray-300 w-screen max-w-full overflow-x-hidden xl:max-w-full xl:w-auto"
+      class="
+        pb-3
+        mb-3
+        border-b-2 border-gray-300
+        w-screen
+        max-w-full
+        xl:max-w-full xl:w-auto
+      "
       v-for="(project, index) in projects"
       :key="index"
     >
-      <v-carousel :show-arrows="false" :height="desktop ? '300px' : '200px'" class="rounded mb-3">
+      <v-carousel
+        :show-arrows="false"
+        :height="desktop ? '300px' : '200px'"
+        class="rounded mb-3"
+      >
         <v-carousel-item
           v-for="(image, i) in project.images"
           :key="i"
