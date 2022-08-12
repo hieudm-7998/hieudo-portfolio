@@ -10,6 +10,9 @@ export default {};
 </script>
 
 <style>
+*{
+  overflow-y: hidden;
+}
 .app {
   font-family: "Inter", sans-serif;
 }
