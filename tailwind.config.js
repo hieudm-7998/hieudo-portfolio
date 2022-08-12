@@ -7,10 +7,8 @@ module.exports = {
         DEFAULT: "1rem",
       },
       screens: {
-        sm: "540px",
-        md: "720px",
-        lg: "600px",
-        xl: "600px",
+        lg: "798px",
+        xl: "798px",
       },
     },
     borderWidth: {
