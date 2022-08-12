@@ -7,11 +7,11 @@
       ( First year on business <span class="not-italic">😇</span> )
     </p>
     <div
-      class="pb-3 mb-3 border-b-2 border-gray-300 w-full max-w-full"
+      class="pb-3 mb-3 border-b-2 border-gray-300 xs:w-screen lg:w-auto"
       v-for="(project, index) in projects"
       :key="index"
     >
-      <v-carousel :show-arrows="false" height="300" class="rounded mb-3">
+      <v-carousel :show-arrows="false" :height="desktop ? '300px' : auto" class="rounded mb-3">
         <v-carousel-item
           v-for="(image, i) in project.images"
           :key="i"
@@ -44,6 +44,11 @@ export default {
     return {
       projects: projects.filter((year) => year.year === 2021),
     };
+  },
+  computed: {
+    desktop() {
+      return this.$vuetify.breakpoint.xl;
+    },
   },
 };
 </script>
