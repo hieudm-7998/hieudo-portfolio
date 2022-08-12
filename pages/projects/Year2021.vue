@@ -16,7 +16,6 @@
           v-for="(image, i) in project.images"
           :key="i"
           :src="image.src"
-          contain
         ></v-carousel-item>
       </v-carousel>
       <h1 class="uppercase text-lg">{{ project.name }}</h1>
@@ -51,9 +50,6 @@ export default {
       return this.$vuetify.breakpoint.xl;
     },
   },
-  mounted() {
-    console.log(this.desktop)
-  }
 };
 </script>
 
