@@ -7,7 +7,7 @@
       ( First year as rookie <span class="not-italic">😇</span> )
     </p>
     <div
-      class="pb-3 mb-3 border-b-2 border-gray-300 w-screen xl:w-auto"
+      class="pb-3 mb-3 border-b-2 border-gray-300 w-screen max-w-full xl:max-w-full xl:w-auto"
       v-for="(project, index) in projects"
       :key="index"
     >
