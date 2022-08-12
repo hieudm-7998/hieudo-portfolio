@@ -22,6 +22,7 @@
         border-b-2 border-gray-300
         w-screen
         max-w-full
+        overflow-y-hidden
         xl:max-w-full xl:w-auto
       "
       v-for="(project, index) in projects"
