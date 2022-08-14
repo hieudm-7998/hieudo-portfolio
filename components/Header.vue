@@ -3,14 +3,26 @@
     <div class="flex justify-between items-center mb-5">
       <div class="border-b-2">
         <NuxtLink class="text-2xl hd-logo" to="/"
-          ><span class="dark:text-white gradient-2 transition ease-in-out duration-500"
+          ><span
+            class="
+              dark:text-white
+              gradient-2
+              transition
+              ease-in-out
+              duration-500
+            "
             >hieudo</span
-          ><span class="dark:text-white gradient transition ease-in-out duration-500"
+          ><span
+            class="dark:text-white gradient transition ease-in-out duration-500"
             >Portfolio</span
           ></NuxtLink
         >
       </div>
-      <DarkModeToggle />
+      <div class="flex justify-center items-center">
+        <!-- <LanguageToggle />
+        <span class="text-black dark:text-white">|</span> -->
+        <DarkModeToggle />
+      </div>
     </div>
     <div
       class="
@@ -32,9 +44,10 @@
 
 <script>
 import DarkModeToggle from "./DarkModeToggle.vue";
+import LanguageToggle from "./LanguageToggle.vue";
 export default {
   name: "Header",
-  components: { DarkModeToggle },
+  components: { DarkModeToggle, LanguageToggle },
 };
 </script>
 
