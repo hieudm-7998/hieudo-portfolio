@@ -1,5 +1,5 @@
 <template>
-  <div class="w-full my-10">
+  <div class="w-full my-10 dark:text-white text-black">
     <h1 class="text-center text-2xl mb-5">My work history 💼</h1>
     <v-timeline>
       <v-timeline-item color="#FF0501">
@@ -26,7 +26,12 @@
 </template>
 
 <script>
-export default {};
+export default {
+  transitions: "fade",
+  head: {
+    title: "HieuDo Portfolio | Work",
+  },
+};
 </script>
 
 <style lang="scss" scoped>

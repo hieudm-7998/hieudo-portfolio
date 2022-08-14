@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h1 class="text-center xl:text-left">
+    <h1 class="text-center xl:text-left dark:text-white text-black">
       {{
         desktop
           ? "👈🏼 Click on the specific field to read about me !"
@@ -12,7 +12,11 @@
 
 <script>
 export default {
+  transitions: "fade",
   layout: "about",
+  head: {
+    title: 'HieuDo Portfolio | About',
+  },
   computed: {
     desktop() {
       return this.$vuetify.breakpoint.xl;

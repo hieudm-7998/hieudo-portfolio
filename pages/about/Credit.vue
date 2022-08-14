@@ -1,24 +1,39 @@
 <template>
   <div>
-    <h1 class="text-center">This portfolio mostly created by</h1>
-    <a class="block mx-auto" href="https://nuxtjs.org/"
-      ><img src="~/assets/images/nuxtjs.jpg" alt=""
+    <h1 class="text-center dark:text-white text-black pt-3">
+      This portfolio mostly created by
+    </h1>
+    <a class="my-3" href="https://nuxtjs.org/"
+      ><img class="block mx-auto w-3/4" src="~/assets/images/nuxtjs.png" alt=""
     /></a>
-    <h2 class="text-center">Deployed by</h2>
-    <a class="block mx-auto" href="https://www.netlify.com"
-      ><img src="~/assets/images/netlify.png" alt=""
+    <h2 class="text-center dark:text-white text-black">and deployed by</h2>
+    <a class="my-3" href="https://www.netlify.com"
+      ><img
+        class="block mx-auto w-10/12"
+        src="~/assets/images/netlify.png"
+        alt=""
     /></a>
-    <h2 class="text-center">and other libraries :</h2>
-    <h2 class="text-center mb-5">
-      <a class="tailwind transition" href="https://tailwindcss.com/"
+    <h2 class="text-center dark:text-white text-black">
+      Other libraries I used :
+    </h2>
+    <h2 class="text-center mb-5 dark:text-white text-black">
+      <a
+        class="tailwind transition dark:text-white text-black"
+        href="https://tailwindcss.com/"
         >Tailwind CSS</a
       >,
-      <a class="vuetify transition" href="https://tailwindcss.com/">Vuetify</a>,
-      <a class="fontawesome transition" href="https://tailwindcss.com/"
+      <a
+        class="vuetify transition dark:text-white text-black"
+        href="https://tailwindcss.com/"
+        >Vuetify</a
+      >,
+      <a
+        class="fontawesome transition dark:text-white text-black"
+        href="https://tailwindcss.com/"
         >FontAwesome</a
       >.
     </h2>
-    <p class="text-center italic">
+    <p class="text-center italic dark:text-white text-black">
       Thanks to every author who made these libraries, or at least made it free.
       <span class="not-italic">🙏</span>
     </p>
@@ -28,6 +43,10 @@
 <script>
 export default {
   layout: "about",
+  transitions: "fade",
+  head: {
+    title: 'HieuDo Portfolio | About',
+  },
 };
 </script>
 

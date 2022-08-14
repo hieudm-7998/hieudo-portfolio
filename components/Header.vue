@@ -1,12 +1,27 @@
 <template>
   <div class="py-5">
-    <div class="mb-5 border-b-2">
-      <NuxtLink class="text-2xl hd-logo" to="/"
-        ><span class="gradient-2 transition ease-in-out duration-500">hieudo</span
-        ><span class="gradient transition ease-in-out duration-500">Portfolio</span></NuxtLink
-      >
+    <div class="flex justify-between items-center mb-5">
+      <div class="border-b-2">
+        <NuxtLink class="text-2xl hd-logo" to="/"
+          ><span class="dark:text-white gradient-2 transition ease-in-out duration-500"
+            >hieudo</span
+          ><span class="dark:text-white gradient transition ease-in-out duration-500"
+            >Portfolio</span
+          ></NuxtLink
+        >
+      </div>
+      <DarkModeToggle />
     </div>
-    <div class="flex items-center justify-between uppercase">
+    <div
+      class="
+        flex
+        items-center
+        justify-between
+        uppercase
+        dark:text-white
+        text-black
+      "
+    >
       <NuxtLink to="/" exact>Home</NuxtLink>
       <NuxtLink to="/about">About me</NuxtLink>
       <NuxtLink to="/projects">Projects</NuxtLink>
@@ -16,8 +31,10 @@
 </template>
 
 <script>
+import DarkModeToggle from "./DarkModeToggle.vue";
 export default {
   name: "Header",
+  components: { DarkModeToggle },
 };
 </script>
 
@@ -26,8 +43,8 @@ export default {
   color: #ff971a;
 }
 
-.nuxt-link-exact-active{
-  color: #ff971a
+.nuxt-link-exact-active {
+  color: #ff971a;
 }
 
 .hd-logo {

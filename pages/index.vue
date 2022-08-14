@@ -1,7 +1,7 @@
 <template>
   <div class="text-center">
-    <img src="./../static/H.jpg" alt="" />
-    <h1 class="my-5 text-xl">
+    <img class="rounded-lg" src="~/static/H.jpg" alt="" />
+    <h1 class="my-5 text-xl dark:text-white text-black">
       Hello, I'm Hieu 👋🏻<br />Welcome to my portfolio, explore the link above to
       hear the story about me ! ✨
     </h1>
@@ -11,5 +11,6 @@
 <script>
 export default {
   name: "IndexPage",
+  transitions: "fade",
 };
 </script>

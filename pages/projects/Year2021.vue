@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="dark:text-white text-black">
     <div class="text-center">
       <h1 class="text-2xl uppercase">2021's projects</h1>
       <p
@@ -7,6 +7,7 @@
           text-sm
           italic
           text-gray-500
+          dark:text-gray-400
           pb-2
           mb-3
           border-b-2 border-gray-300
@@ -16,11 +17,7 @@
       </p>
     </div>
     <div
-      class="
-        pb-3
-        mb-3
-        border-b-2 border-gray-300
-      "
+      class="pb-3 mb-3 border-b-2 border-gray-300"
       v-for="(project, index) in projects"
       :key="index"
     >
@@ -57,6 +54,10 @@ import projects from "~/data/projects.js";
 export default {
   name: "Year2021",
   layout: "projects",
+  transitions: "fade",
+  head: {
+    title: 'HieuDo Portfolio | Projects | 2021',
+  },
   data() {
     return {
       projects: projects.filter((year) => year.year === 2021),

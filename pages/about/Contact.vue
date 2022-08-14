@@ -1,8 +1,10 @@
 <template>
   <div>
-    <h1 class="mb-5">Reach me at :</h1>
+    <h1 class="mb-5 dark:text-white text-black">Reach me at :</h1>
     <div v-for="(contact, index) in contacts" :key="index">
-      <p>{{ contact.type }} : {{ contact.info }}</p>
+      <p class="dark:text-white text-black">
+        {{ contact.type }} : {{ contact.info }}
+      </p>
     </div>
   </div>
 </template>
@@ -10,6 +12,10 @@
 <script>
 export default {
   layout: "about",
+  transitions: "fade",
+  head: {
+    title: 'HieuDo Portfolio | About',
+  },
   data() {
     return {
       contacts: [

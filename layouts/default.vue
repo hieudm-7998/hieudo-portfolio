@@ -1,7 +1,11 @@
 <template>
-  <div class="app container">
-    <Header />
-    <Nuxt />
+  <div id="app" class="bg-white dark:bg-gray-900 h-screen transition">
+    <div class="container">
+      <Header />
+      <transition name="fade">
+        <Nuxt />
+      </transition>
+    </div>
   </div>
 </template>
 
@@ -10,22 +14,15 @@ export default {};
 </script>
 
 <style>
-.app {
+#app {
   font-family: "Inter", sans-serif;
 }
 
-.page-enter-active,
-.page-leave-active {
-  transition: opacity 0.5s;
-}
-.page-enter,
-.page-leave-to {
-  opacity: 0;
-}
 .primary-color {
   color: rgb(249 115 22);
 }
-::-moz-selection { /* Code for Firefox */
+::-moz-selection {
+  /* Code for Firefox */
   color: white;
   background: rgb(249 115 22);
 }

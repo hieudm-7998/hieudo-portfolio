@@ -1,0 +1,36 @@
+.fade-enter-active {
+  animation: coming 0.4s;
+  animation-delay: 0.2s;
+  opacity: 0;
+}
+
+/* .layout-enter-active */
+
+.fade-leave-active {
+  animation: going 0.4s;
+}
+
+/* .layout-leave-active */
+
+@keyframes going {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-10px);
+    opacity: 0;
+  }
+}
+
+@keyframes coming {
+  from {
+    transform: translateX(-10px);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
