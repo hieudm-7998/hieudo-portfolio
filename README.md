@@ -1,12 +1,9 @@
 <h1 align="center">HieuDo Portfolio</h1>
-    <h3 align="center">Hi, I'm Hieu - Front-end Developer from Vietnam.</h3>
-    <h3 align="center">
-      Welcome to my portfolio, you can take a look at my portfolio from here :
-    </h3>
-    <a align="center" href="https://hieudo-portfolio.netlify.app/"
-      >https://hieudo-portfolio.netlify.app/</a
-    >
-    <h3 align="center">...or by cloning this project.</h3>
+<h3 align="center">Hi, I'm Hieu - Front-end Developer from Vietnam.</h3>
+<h3 align="left">Welcome to my portfolio, you can take a look at my portfolio from here :</h3>
+<a align="left" href="https://hieudo-portfolio.netlify.app/">https://hieudo-portfolio.netlify.app/</a>
+<h3 align="left">...or by cloning this project.</h3>
+
 ```bash
 # Clone this repository
 
