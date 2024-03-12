@@ -1,6 +1,5 @@
 <template>
   <button
-    @click="themeSwitcher"
     class="
       p-2
       text-slate-600
@@ -8,10 +7,11 @@
       dark:text-slate-300 dark:hover:text-slate-100
       transition
     "
+    @click="themeSwitcher"
   >
     <!-- Dark mode icon -->
     <svg
-      v-if="$colorMode.value == 'light'"
+      v-if="$colorMode.value === 'light'"
       xmlns="http://www.w3.org/2000/svg"
       class="h-6 w-6"
       viewBox="0 0 20 20"
@@ -41,12 +41,12 @@
 <script>
 export default {
   methods: {
-    themeSwitcher() {
+    themeSwitcher () {
       this.$colorMode.preference =
-        this.$colorMode.value == "light" ? "dark" : "light";
-    },
-  },
-};
+        this.$colorMode.value === 'light' ? 'dark' : 'light'
+    }
+  }
+}
 </script>
 
 <style>

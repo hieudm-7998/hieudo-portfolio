@@ -1,24 +1,24 @@
 <template>
   <div class="flex justify-center items-center px-3 py-2">
     <button @click="languageSwitch">
-      <span :class="isUs ? 'fi-gb' : 'fi-vn'" class="fi"></span>
+      <span :class="isUs ? 'fi-gb' : 'fi-vn'" class="fi" />
     </button>
   </div>
 </template>
 
 <script>
 export default {
-  data() {
+  data () {
     return {
-      isUs: true,
-    };
+      isUs: true
+    }
   },
   methods: {
-    languageSwitch() {
-      this.isUs = !this.isUs;
-    },
-  },
-};
+    languageSwitch () {
+      this.isUs = !this.isUs
+    }
+  }
+}
 </script>
 
 <style lang="scss" scoped>

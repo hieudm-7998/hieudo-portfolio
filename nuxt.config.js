@@ -1,28 +1,28 @@
 export default {
   // Disable server-side rendering: https://go.nuxtjs.dev/ssr-mode
   ssr: false,
-  target: "static",
+  target: 'static',
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: "HieuDo Portfolio",
+    title: 'HieuDo Portfolio',
     meta: [
-      { charset: "utf-8" },
-      { name: "viewport", content: "width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" },
-      { hid: "description", name: "description", content: "" },
-      { name: "format-detection", content: "telephone=no" },
+      { charset: 'utf-8' },
+      { name: 'viewport', content: 'width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' },
+      { hid: 'description', name: 'description', content: '' },
+      { name: 'format-detection', content: 'telephone=no' }
     ],
     link: [
-      { rel: "icon", type: "image/x-icon", href: "~/static/favicon.ico" },
+      { rel: 'icon', type: 'image/x-icon', href: '~/static/favicon.ico' },
       {
-        rel: "stylesheet",
-        href: "https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap",
-      },
-    ],
+        rel: 'stylesheet',
+        href: 'https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap'
+      }
+    ]
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
-  css: ["~/assets/main.css"],
+  css: ['~/assets/main.css'],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [],
@@ -33,39 +33,38 @@ export default {
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
   buildModules: [
     // https://go.nuxtjs.dev/tailwindcss
-    "@nuxtjs/tailwindcss",
-    "@nuxtjs/fontawesome",
-    "@nuxtjs/color-mode",
-    ,
+    '@nuxtjs/tailwindcss',
+    '@nuxtjs/fontawesome',
+    '@nuxtjs/color-mode',,
     [
-      "@nuxtjs/vuetify",
+      '@nuxtjs/vuetify',
       {
-        customVariables: ["~/assets/variables.scss"],
-        treeShake: true, // <-- add this line
-      },
-    ],
+        customVariables: ['~/assets/variables.scss'],
+        treeShake: true // <-- add this line
+      }
+    ]
   ],
 
   fontawesome: {
-    component: "Fa",
+    component: 'Fa',
     suffix: false,
     icons: {
       solid: true,
-      brands: true,
-    },
+      brands: true
+    }
   },
 
   pageTransition: {
-    name: "fade",
-    mode: "out-in",
+    name: 'fade',
+    mode: 'out-in'
   },
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
     // https://go.nuxtjs.dev/axios
-    "@nuxtjs/axios",
+    '@nuxtjs/axios',
     // https://go.nuxtjs.dev/pwa
-    "@nuxtjs/pwa",
+    '@nuxtjs/pwa'
     // "@nuxtjs/i18n",
   ],
 
@@ -88,34 +87,34 @@ export default {
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
   axios: {
     // Workaround to avoid enforcing hard-coded localhost:3000: https://github.com/nuxt-community/axios-module/issues/308
-    baseURL: "/",
+    baseURL: '/'
   },
 
   // PWA module configuration: https://go.nuxtjs.dev/pwa
   pwa: {
     manifest: {
-      lang: "en",
-    },
+      lang: 'en'
+    }
   },
 
   colorMode: {
-    classSuffix: "",
+    classSuffix: ''
   },
 
   router: {
-    linkActiveClass: "nuxt-link-active",
-    linkExactActiveClass: "nuxt-link-exact-active",
+    linkActiveClass: 'nuxt-link-active',
+    linkExactActiveClass: 'nuxt-link-exact-active'
   },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
     loaders: {
       sass: {
-        implementation: require("sass"),
+        implementation: require('sass')
       },
       scss: {
-        implementation: require("sass"),
-      },
-    },
-  },
-};
+        implementation: require('sass')
+      }
+    }
+  }
+}

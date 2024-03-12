@@ -12,17 +12,17 @@
 
 <script>
 export default {
-  transitions: "fade",
-  layout: "projects",
+  transitions: 'fade',
+  layout: 'projects',
   head: {
-    title: 'HieuDo Portfolio | Projects',
+    title: 'HieuDo Portfolio | Projects'
   },
   computed: {
-    desktop() {
-      return this.$vuetify.breakpoint.xl;
-    },
-  },
-};
+    desktop () {
+      return this.$vuetify.breakpoint.xl
+    }
+  }
+}
 </script>
 
 <style>

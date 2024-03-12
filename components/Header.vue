@@ -2,8 +2,11 @@
   <div class="py-5">
     <div class="flex justify-between items-center mb-5">
       <div class="border-b-2">
-        <NuxtLink class="text-2xl hd-logo" to="/"
-          ><span
+        <NuxtLink
+          class="text-2xl hd-logo"
+          to="/"
+        >
+          <span
             class="
               dark:text-white
               gradient-2
@@ -11,12 +14,10 @@
               ease-in-out
               duration-500
             "
-            >hieudo</span
-          ><span
+          >hieudo</span><span
             class="dark:text-white gradient transition ease-in-out duration-500"
-            >Portfolio</span
-          ></NuxtLink
-        >
+          >Portfolio</span>
+        </NuxtLink>
       </div>
       <div class="flex justify-center items-center">
         <!-- <LanguageToggle />
@@ -34,21 +35,29 @@
         text-black
       "
     >
-      <NuxtLink to="/" exact>Home</NuxtLink>
-      <NuxtLink to="/about">About me</NuxtLink>
-      <NuxtLink to="/projects">Projects</NuxtLink>
-      <NuxtLink to="/work">Work</NuxtLink>
+      <NuxtLink to="/" exact>
+        Home
+      </NuxtLink>
+      <NuxtLink to="/about">
+        About me
+      </NuxtLink>
+      <NuxtLink to="/projects">
+        Projects
+      </NuxtLink>
+      <NuxtLink to="/work">
+        Work
+      </NuxtLink>
     </div>
   </div>
 </template>
 
 <script>
-import DarkModeToggle from "./DarkModeToggle.vue";
-import LanguageToggle from "./LanguageToggle.vue";
+import DarkModeToggle from './DarkModeToggle.vue'
+import LanguageToggle from './LanguageToggle.vue'
 export default {
-  name: "Header",
-  components: { DarkModeToggle, LanguageToggle },
-};
+  name: 'Header',
+  components: { DarkModeToggle, LanguageToggle }
+}
 </script>
 
 <style lang="scss">

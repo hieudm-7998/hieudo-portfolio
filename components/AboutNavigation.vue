@@ -11,16 +11,22 @@
       text-black
     "
   >
-    <NuxtLink to="/about/biography">Biography</NuxtLink>
-    <NuxtLink to="/about/contact">Contact</NuxtLink>
-    <NuxtLink to="/about/credit">Credit</NuxtLink>
+    <NuxtLink to="/about/biography">
+      Biography
+    </NuxtLink>
+    <NuxtLink to="/about/contact">
+      Contact
+    </NuxtLink>
+    <NuxtLink to="/about/credit">
+      Credit
+    </NuxtLink>
   </div>
 </template>
 
 <script>
 export default {
-  name: "AboutNavigation",
-};
+  name: 'AboutNavigation'
+}
 </script>
 
 <style>

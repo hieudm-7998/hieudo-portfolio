@@ -3,16 +3,25 @@
     <h1 class="text-center dark:text-white text-black pt-3">
       This portfolio mostly created by
     </h1>
-    <a class="my-3" href="https://nuxtjs.org/"
-      ><img class="block mx-auto w-3/4" src="~/assets/images/nuxtjs.png" alt=""
-    /></a>
-    <h2 class="text-center dark:text-white text-black">and deployed by</h2>
-    <a class="my-3" href="https://www.netlify.com"
-      ><img
-        class="block mx-auto w-10/12"
-        src="~/assets/images/netlify.png"
-        alt=""
-    /></a>
+    <a
+      class="my-3"
+      href="https://nuxtjs.org/"
+    ><img
+      class="block mx-auto w-3/4"
+      src="~/assets/images/nuxtjs.png"
+      alt=""
+    ></a>
+    <h2 class="text-center dark:text-white text-black">
+      and deployed by
+    </h2>
+    <a
+      class="my-3"
+      href="https://www.netlify.com"
+    ><img
+      class="block mx-auto w-10/12"
+      src="~/assets/images/netlify.png"
+      alt=""
+    ></a>
     <h2 class="text-center dark:text-white text-black">
       Other libraries I used :
     </h2>
@@ -20,18 +29,15 @@
       <a
         class="tailwind transition dark:text-white text-black"
         href="https://tailwindcss.com/"
-        >Tailwind CSS</a
-      >,
+      >Tailwind CSS</a>,
       <a
         class="vuetify transition dark:text-white text-black"
         href="https://tailwindcss.com/"
-        >Vuetify</a
-      >,
+      >Vuetify</a>,
       <a
         class="fontawesome transition dark:text-white text-black"
         href="https://tailwindcss.com/"
-        >FontAwesome</a
-      >.
+      >FontAwesome</a>.
     </h2>
     <p class="text-center italic dark:text-white text-black">
       Thanks to every author who made these libraries, or at least made it free.
@@ -42,12 +48,12 @@
 
 <script>
 export default {
-  layout: "about",
-  transitions: "fade",
+  layout: 'about',
+  transitions: 'fade',
   head: {
-    title: 'HieuDo Portfolio | About',
-  },
-};
+    title: 'HieuDo Portfolio | About'
+  }
+}
 </script>
 
 <style lang="scss" scoped>

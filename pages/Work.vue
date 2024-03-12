@@ -1,25 +1,34 @@
 <template>
   <div class="w-full my-10 dark:text-white text-black">
-    <h1 class="text-center text-2xl mb-5">My work history 💼</h1>
+    <h1 class="text-center text-2xl mb-5">
+      My work history 💼
+    </h1>
     <v-timeline>
       <v-timeline-item color="#FF0501">
-        <p class="text-sm italic text-gray-500">Jan. 2021</p>
-        <a class="unitiv transition" href="https://unitiv.vn/" target="_blank"
-          >UNITIV Vietnam</a
-        >
+        <p class="text-sm italic text-gray-500">
+          Jan. 2021
+        </p>
+        <a
+          class="unitiv transition"
+          href="https://unitiv.vn/"
+          target="_blank"
+        >UNITIV Vietnam</a>
       </v-timeline-item>
       <v-timeline-item color="#1B3066" class="text-right">
-        <p class="text-sm italic text-gray-500">Jun. 2021</p>
+        <p class="text-sm italic text-gray-500">
+          Jun. 2021
+        </p>
         <a class="vti transition" href="https://vti.com.vn/">VTI Group</a>
       </v-timeline-item>
       <v-timeline-item color="#2D4E97">
-        <p class="text-sm italic text-gray-500">Jan. 2022</p>
+        <p class="text-sm italic text-gray-500">
+          Jan. 2022
+        </p>
         <a
           class="smartosc transition"
           href="https://www.smartosc.com/"
           target="_blank"
-          >SmartOSC JSC. <span class="italic">(current)</span></a
-        >
+        >SmartOSC JSC. <span class="italic">(current)</span></a>
       </v-timeline-item>
     </v-timeline>
   </div>
@@ -27,11 +36,11 @@
 
 <script>
 export default {
-  transitions: "fade",
+  transitions: 'fade',
   head: {
-    title: "HieuDo Portfolio | Work",
-  },
-};
+    title: 'HieuDo Portfolio | Work'
+  }
+}
 </script>
 
 <style lang="scss" scoped>
