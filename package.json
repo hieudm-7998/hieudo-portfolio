@@ -7,6 +7,9 @@
     "build": "nuxt build",
     "start": "nuxt start",
     "generate": "nuxt generate",
+    "lint:js": "eslint --ext \".js\" --ignore-path .gitignore .",
+    "lint": "npm run lint:js",
+    "lintfix": "npm run lint:js -- --fix",
     "eslint-fix-force": "npm run eslint --fix || true",
    "test-staged": "lint-staged"
   },
