@@ -9,7 +9,15 @@
     "generate": "nuxt generate",
     "lint:js": "eslint --ext \".js,.vue\" --ignore-path .gitignore .",
     "lint": "npm run lint:js",
-    "lintfix": "npm run lint:js -- --fix"
+    "lintfix": "npm run lint:js -- --fix",
+    "eslint-fix-force": "npm run eslint --fix || true",
+   "test-staged": "lint-staged"
+  },
+  "lint-staged": {
+    "*.{js,jsx}": [
+      "eslint-fix-force",
+      "git add"
+    ]
   },
   "dependencies": {
     "@fortawesome/free-regular-svg-icons": "^6.1.2",
